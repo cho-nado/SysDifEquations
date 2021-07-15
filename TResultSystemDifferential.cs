@@ -37,3 +37,4 @@ namespace StandartHelperLibrary.MathHelper
         //-------------------------------------------------------
     }
 }
+// я устал!

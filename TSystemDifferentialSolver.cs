@@ -154,6 +154,4 @@ namespace StandartHelperLibrary.MathHelper
 
     }
 }
-// i want to change this code from my other device
-// change this product
-// i hate you 
+
