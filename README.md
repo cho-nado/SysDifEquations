@@ -7,7 +7,9 @@ The Runge-Kutta method is a numerical technique used to solve ordinary different
 
 ## Problem Setup:
 The goal is to solve an initial value problem of the form:
-\frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0
+
+<img width="256" alt="Снимок экрана 2024-10-14 в 12 58 22 AM" src="https://github.com/user-attachments/assets/e121a402-9e7e-47da-af5c-b971c8a6f67a">
+
 
 The Runge-Kutta method approximates the solution by progressing step-by-step from an initial condition, using intermediate calculations to achieve higher accuracy.
 
@@ -16,13 +18,13 @@ The Runge-Kutta method approximates the solution by progressing step-by-step fro
 The "4th order" refers to the error reduction; the error per step is proportional to the step size raised to the 5th power, making it more accurate than lower-order methods.
 
 For each step from t_n to t_(n+1) = t_n + h, where h is the step size, the 4th-order Runge-Kutta method calculates the following four intermediate values:
-\( k_1 = h f(t_n, y_n) \)
-k_2 = h f\left(t_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right)
-k_3 = h f\left(t_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right)
-k_4 = h f(t_n + h, y_n + k_3)
+
+<img width="267" alt="Снимок экрана 2024-10-14 в 12 57 05 AM" src="https://github.com/user-attachments/assets/86c85df2-69c4-4354-9ebc-f72f2e88deaf">
 
 Then, the solution is updated by combining these intermediate values:
-y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)
+
+<img width="311" alt="Снимок экрана 2024-10-14 в 12 57 31 AM" src="https://github.com/user-attachments/assets/1d4db1fb-8ba5-45f4-a198-cd9487da878c">
+
 
 ## How It Works: 
 1. Initial Step: Start with the known initial value y(t_0) = y_0 and select a step size h.
