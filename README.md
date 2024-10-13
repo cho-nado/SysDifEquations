@@ -16,7 +16,7 @@ The Runge-Kutta method approximates the solution by progressing step-by-step fro
 The "4th order" refers to the error reduction; the error per step is proportional to the step size raised to the 5th power, making it more accurate than lower-order methods.
 
 For each step from t_n to t_(n+1) = t_n + h, where h is the step size, the 4th-order Runge-Kutta method calculates the following four intermediate values:
-\ (k_1 = h f(t_n, y_n) \)
+\( k_1 = h f(t_n, y_n) \)
 k_2 = h f\left(t_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right)
 k_3 = h f\left(t_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right)
 k_4 = h f(t_n + h, y_n + k_3)
